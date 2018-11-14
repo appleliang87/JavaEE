@@ -1,6 +1,8 @@
 package workshop02.model;
 
 import java.util.List;
+import javax.json.Json;
+import javax.json.JsonObject;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -43,6 +45,18 @@ public class DiscountCode {
     }
     public void setCustomers(List<Customer> customers) {
         this.customers = customers;
+    }
+    
+    public JsonObject toJson(){
+        return(Json.createObjectBuilder()
+                .add("discountCode",discountCode.toString())
+                .add("rate",rate)
+                .build());
+    }
+
+    @Override
+    public String toString() {
+        return "DiscountCode{" + "discountCode=" + discountCode + ", rate=" + rate + ", customers=" + customers + '}';
     }
     
 }

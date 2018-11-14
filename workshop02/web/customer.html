@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Customer Query</h1>
+        
+        <form method ="GET" action="customer">
+            Customer Id:
+            <input type="number" name="customerId" placeholder="Please enter the customer id to search">
+            <button type="submit">Search</button>
+        </form>
+        
+        <hr>
+        
+        <h1>Create New Customer</h1>
+        
+        
+        <form method="POST" action="customer">
+            
+            <table>
+                <tr>
+                    <td>Customer Id</td>
+                    <td>
+                        <input type="number" name="customerId">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address Line1</td>
+                    <td>
+                        <input type="text" name="addressline1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address Line2</td>
+                    <td>
+                        <input type="text" name="addressline2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>
+                        <input type="text" name="city">
+                    </td>
+                </tr>
+                <tr>
+                    <td>State - 2 characters</td>
+                    <td>
+                        <input type="text" name="state">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Zip</td>
+                    <td>
+                        <input type="text" name="zip">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>
+                        <input type="text" name="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fax</td>
+                    <td>
+                        <input type="text" name="fax">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Discount Code</td>
+                    <td>
+                        <select name="discountCode">
+                            <option value="H">H</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="N">N</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Credit Limit</td>
+                    <td>
+                        <input type="number" name="creditLimit">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Add</button>
+                    </td>
+                </tr>
+            </table>
+            
+        </form>
+        
+    </body>
+</html>
